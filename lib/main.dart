@@ -11,8 +11,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Clinical Assistant',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
+        primaryColor: Color(0xFF283593),
+        accentColor: Color(0xFF64dd17),
       ),
       home: Home(),
     );
