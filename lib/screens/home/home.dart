@@ -1,3 +1,4 @@
+import 'package:clinical_assistant/screens/patient_management/patient_management.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatelessWidget {
@@ -13,7 +14,10 @@ class Home extends StatelessWidget {
           children: [
             RaisedButton(
               child: Text("Manage Patients"),
-              onPressed: null,
+              onPressed: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (BuildContext context) => PatientManagement())),
             ),
             RaisedButton(
               child: Text("Start Assessment"),
